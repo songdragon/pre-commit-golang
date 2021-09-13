@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 FILES=$(go list ./...  | grep -v /vendor/)
-exec go -tags dynamic build $FILES
+exec go build -tags dynamic $FILES
